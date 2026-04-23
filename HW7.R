@@ -208,6 +208,8 @@ chart.Correlation(reg.data, histogram=TRUE, pch=19) # make a correlation matrix
 #Question 2 ----
 full.step <- ols_step_forward_aic(mod.full)
 full.step 
+full.step$model
+plot(full.step )
 
 #Question 3 ----
 
