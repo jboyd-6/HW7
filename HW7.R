@@ -205,6 +205,9 @@ reg.data_trans <- data.frame(ghg$airTemp,
                         ghg$log.precip+ghg$HydroV)
 chart.Correlation(reg.data, histogram=TRUE, pch=19) # make a correlation matrix
 
+#Question 2 ----
+full.step <- ols_step_forward_aic(mod.full)
+full.step 
 
 #Question 3 ----
 
